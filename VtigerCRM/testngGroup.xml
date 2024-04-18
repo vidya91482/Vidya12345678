@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Suite">
+	<groups>
+		<run>
+			<include name="smoke"></include>
+		</run>
+	</groups>
+  <test thread-count="2" parallel="methods" name="TestRunner1">
+    <classes>
+      <class name="practice.AnnotationTest"/>
+      <class name="practice.AnnotationPracticeTest"/>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="2" parallel="methods" name="TestRunner2">
+    <classes>
+      <class name="practice.AnnotationTest"/>
+      <class name="practice.AnnotationPracticeTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
