@@ -18,7 +18,7 @@ public class Dropdown {
 		driver.get("https://demoapps.qspiders.com/ui/dropdown?sublist=0");
 		WebElement ele = driver.findElement(By.id("select1"));
 		Select s=new Select(ele);
-		s.selectByIndex(3);
+        s.selectByIndex(3);
 		String text = driver.findElement(By.xpath("//section[text()='Shoes']")).getText();
 		System.out.println(text);
 
